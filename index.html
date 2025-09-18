@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interactive Web Assignment</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>🧠 Interactive Web Pages with JavaScript</h1>
+		<p>Explore event handling, interactive elements, and form validation!</p>
+	</header>
+
+	<!-- Light/Dark Mode Toggle -->
+	<section id="theme-section">
+		<h2>Light/Dark Mode</h2>
+		<button id="toggle-theme">Toggle Light/Dark Mode</button>
+	</section>
+
+	<!-- Counter Feature -->
+	<section id="counter-section">
+		<h2>Counter Game</h2>
+		<p>Count: <span id="counter-value">0</span></p>
+		<button id="increment-btn">Increment</button>
+		<button id="reset-btn">Reset</button>
+	</section>
+
+	<!-- Collapsible FAQ Section -->
+	<section id="faq-section">
+		<h2>FAQ</h2>
+		<div class="faq-item">
+			<button class="faq-question">What is JavaScript?</button>
+			<div class="faq-answer">JavaScript is a programming language for the web, enabling interactivity and dynamic content.</div>
+		</div>
+		<div class="faq-item">
+			<button class="faq-question">Why validate forms?</button>
+			<div class="faq-answer">Form validation ensures users provide correct and complete information before submitting.</div>
+		</div>
+	</section>
+
+	<!-- Form Section -->
+	<section id="form-section">
+		<h2>Sign Up Form</h2>
+		<form id="signup-form" novalidate>
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<span class="error-message" id="name-error"></span>
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<span class="error-message" id="email-error"></span>
+			</div>
+			<div>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<span class="error-message" id="password-error"></span>
+			</div>
+			<button type="submit">Sign Up</button>
+			<div id="form-success" class="success-message"></div>
+		</form>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>
